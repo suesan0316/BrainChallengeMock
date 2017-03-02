@@ -19,7 +19,7 @@ namespace BrainChallenge.Droid
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Menu);
-
+			//
             // Create your application here
         }
     }

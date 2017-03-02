@@ -21,70 +21,328 @@
             android:id="@+id/textView1"
             android:textAlignment="gravity"
             android:gravity="center" />
-        <TextView
-            android:text="記憶力"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:paddingLeft="30px" />
     </LinearLayout>
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/horizontalScrollView1">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:text="Button"
+        android:id="@+id/scrollView1">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:text="記憶力"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:paddingLeft="30px"
+                    android:layout_marginBottom="0.0dp"
+                    android:layout_marginTop="27.5dp" />
+            </LinearLayout>
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button1" />
-            <Button
-                android:text="Button"
+                android:id="@+id/horizontalScrollView1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="柔軟性"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30px"
+                    android:layout_marginBottom="0.0dp"
+                    android:layout_marginTop="27.5dp" />
+            </LinearLayout>
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="スピード"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30px"
+                    android:layout_marginBottom="0.0dp"
+                    android:layout_marginTop="27.5dp" />
+            </LinearLayout>
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="問題解決能力"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30px"
+                    android:layout_marginBottom="0.0dp"
+                    android:layout_marginTop="27.5dp" />
+            </LinearLayout>
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </HorizontalScrollView>
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:text="ゲーム名"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100.0dp"
+                        android:minHeight="100.0dp"
+                        android:layout_marginLeft="20.5dp"
+                        android:layout_marginBottom="11.5dp"
+                        android:layout_marginTop="17.0dp"
+                        android:text="ゲーム名" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </TableLayout>
+    </ScrollView>
 </LinearLayout>
