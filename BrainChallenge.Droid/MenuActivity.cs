@@ -19,15 +19,18 @@ namespace BrainChallenge.Droid
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Menu);
+
+			string text = Intent.GetStringExtra("MyData") ?? "Data not available";
+
 			//
             // Create your application here
 			var button = FindViewById<Button>(Resource.Id.button);
 			button.Click += delegate
 			{
 				var activity2 = new Intent(this, typeof(GameStartActivity));
-				activity2.PutExtra("MyData", "Data from Activity1");
 				StartActivity(activity2);
 			};
+
         }
     }
 }

@@ -45,10 +45,34 @@ namespace BrainChallenge.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int birch = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int images = 2130837505;
+			public const int coconut = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int elm = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int fir = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Icon = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int images = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int larch = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int maple = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int oak = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int pine = 2130837513;
 			
 			static Drawable()
 			{
@@ -63,8 +87,8 @@ namespace BrainChallenge.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050012
-			public const int button = 2131034130;
+			// aapt resource value: 0x7f050013
+			public const int button = 2131034131;
 			
 			// aapt resource value: 0x7f05000d
 			public const int button1 = 2131034125;
@@ -75,8 +99,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f05000f
 			public const int button4 = 2131034127;
 			
-			// aapt resource value: 0x7f050011
-			public const int horizontalScrollView1 = 2131034129;
+			// aapt resource value: 0x7f050012
+			public const int horizontalScrollView1 = 2131034130;
 			
 			// aapt resource value: 0x7f050003
 			public const int imageView1 = 2131034115;
@@ -90,8 +114,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f05000e
 			public const int linearLayout3 = 2131034126;
 			
-			// aapt resource value: 0x7f050010
-			public const int scrollView1 = 2131034128;
+			// aapt resource value: 0x7f050011
+			public const int scrollView1 = 2131034129;
 			
 			// aapt resource value: 0x7f050002
 			public const int textView1 = 2131034114;
@@ -120,6 +144,9 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f050005
 			public const int textView9 = 2131034117;
 			
+			// aapt resource value: 0x7f050010
+			public const int viewpager = 2131034128;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -140,7 +167,10 @@ namespace BrainChallenge.Droid
 			public const int GameStart = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Menu = 2130903042;
+			public const int Help = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Menu = 2130903043;
 			
 			static Layout()
 			{
