@@ -64,7 +64,8 @@
                         android:minHeight="100.0dp"
                         android:layout_marginLeft="20.5dp"
                         android:layout_marginBottom="11.5dp"
-                        android:layout_marginTop="17.0dp" />
+                        android:layout_marginTop="17.0dp"
+                        android:id="@+id/button" />
                     <Button
                         android:text="ゲーム名"
                         android:layout_width="wrap_content"
