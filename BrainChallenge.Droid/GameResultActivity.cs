@@ -27,6 +27,15 @@ namespace BrainChallenge.Droid
 				activity2.PutExtra("MyData", "Data from Activity1");
 				StartActivity(activity2);
 			};
+
+			var again = FindViewById<Button>(Resource.Id.button1);
+
+			again.Click += delegate {
+				var activity2 = new Intent(this, typeof(MemoryGameActivity));
+				activity2.PutExtra("MyData", "Data from Activity1");
+				StartActivity(activity2);
+			};
+
 			// Create your application here
 		}
 	}
