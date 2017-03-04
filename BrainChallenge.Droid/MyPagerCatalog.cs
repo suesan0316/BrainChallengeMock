@@ -32,22 +32,22 @@ namespace BrainChallenge.Droid
     {
         // Built-in tree catalog (could be replaced with a database)
 		static MyPagerPage[] myPagerBuiltInCatalog = {
-            new MyPagerPage { imageId = Resource.Drawable.larch,
-                           caption = "No.1: The Larch" },
-            new MyPagerPage { imageId = Resource.Drawable.maple,
-                           caption = "No.2: Maple" },
-            new MyPagerPage { imageId = Resource.Drawable.birch,
-                           caption = "No.3: Birch" },
-            new MyPagerPage { imageId = Resource.Drawable.coconut,
-                           caption = "No.4: Coconut" },
-            new MyPagerPage { imageId = Resource.Drawable.oak,
-                           caption = "No.5: Oak" },
+            new MyPagerPage { imageId = Resource.Drawable.images,
+                           caption = "No.1" },
+            new MyPagerPage { imageId = Resource.Drawable.images,
+                           caption = "No.2" },
+            new MyPagerPage { imageId = Resource.Drawable.images,
+                           caption = "No.3" },
+            new MyPagerPage { imageId = Resource.Drawable.images,
+                           caption = "No.4" },
+            new MyPagerPage { imageId = Resource.Drawable.images,
+                           caption = "No.5" }/*,
             new MyPagerPage { imageId = Resource.Drawable.fir,
                            caption = "No.6: Fir" },
             new MyPagerPage { imageId = Resource.Drawable.pine,
                            caption = "No.7: Pine" },
             new MyPagerPage { imageId = Resource.Drawable.elm,
-                           caption = "No.8: Elm" },
+                           caption = "No.8: Elm" }*/
         };
 
         // Array of tree pages that make up the catalog:

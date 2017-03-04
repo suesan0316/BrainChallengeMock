@@ -81,6 +81,7 @@
     <Compile Include="HelpActivity.cs" />
     <Compile Include="MyPagerCatalog.cs" />
     <Compile Include="MyPagerAdapter.cs" />
+    <Compile Include="MyPager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

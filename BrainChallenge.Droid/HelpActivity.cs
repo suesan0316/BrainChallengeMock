@@ -22,13 +22,27 @@ namespace BrainChallenge.Droid
 			SetContentView(Resource.Layout.Help);
 
 			// Locate the ViewPager:
-			ViewPager viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
+			MyPager viewPager = FindViewById<MyPager>(Resource.Id.viewpager);
 
 			// Instantiate the tree catalog:
 			treeCatalog = new MyPagerCatalog();
 
 			// Set up the adapter for the ViewPager
 			viewPager.Adapter = new MyPagerAdapter(this, treeCatalog);
+
+			var button = FindViewById<Button>(Resource.Id.button1);
+			button.Click += delegate
+			{
+				var activity2 = new Intent(this, typeof(GameStartActivity));
+				StartActivity(activity2);
+			};
+
+			viewPager.PageSelected += delegate {
+				int dat = viewPager.CurrentItem;
+				var text = FindViewById<TextView>(Resource.Id.textView2);
+
+				text.Text = "ゲームのヘルプ"+(dat + 1)+"です\nゲームの説明を表示";
+			};
 		}
 	}
 }

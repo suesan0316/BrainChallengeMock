@@ -19,21 +19,24 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
             android:gravity="center"
-            android:text="○○ゲーム"
+            android:text="○○ゲームヘルプ"
             android:layout_marginTop="17.5dp"
-            android:layout_marginBottom="17.5dp" />
+            android:layout_marginBottom="59.0dp" />
     </LinearLayout>
-    <android.support.v4.view.ViewPager
+    <brainchallenge.droid.MyPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px">
         <android.support.v4.view.PagerTabStrip
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:paddingBottom="10dp"
-            android:paddingTop="10dp" />
-    </android.support.v4.view.ViewPager>
+            android:paddingTop="10dp"
+            android:id="@+id/pagerTabStrip2" />
+    </brainchallenge.droid.MyPager>
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -47,8 +50,21 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:gravity="center"
-            android:text="○○ゲーム"
-            android:layout_marginTop="17.5dp"
-            android:layout_marginBottom="17.5dp" />
+            android:text="ゲームのヘルプ1です\nゲームの説明を表示"
+            android:layout_marginTop="78.0dp"
+            android:layout_marginBottom="61.5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <Button
+            android:text="戻る"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button1" />
     </LinearLayout>
 </LinearLayout>

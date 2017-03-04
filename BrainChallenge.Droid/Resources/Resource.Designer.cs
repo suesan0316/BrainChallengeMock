@@ -87,8 +87,8 @@ namespace BrainChallenge.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050013
-			public const int button = 2131034131;
+			// aapt resource value: 0x7f050014
+			public const int button = 2131034132;
 			
 			// aapt resource value: 0x7f05000d
 			public const int button1 = 2131034125;
@@ -99,8 +99,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f05000f
 			public const int button4 = 2131034127;
 			
-			// aapt resource value: 0x7f050012
-			public const int horizontalScrollView1 = 2131034130;
+			// aapt resource value: 0x7f050013
+			public const int horizontalScrollView1 = 2131034131;
 			
 			// aapt resource value: 0x7f050003
 			public const int imageView1 = 2131034115;
@@ -115,7 +115,10 @@ namespace BrainChallenge.Droid
 			public const int linearLayout3 = 2131034126;
 			
 			// aapt resource value: 0x7f050011
-			public const int scrollView1 = 2131034129;
+			public const int pagerTabStrip2 = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int scrollView1 = 2131034130;
 			
 			// aapt resource value: 0x7f050002
 			public const int textView1 = 2131034114;
