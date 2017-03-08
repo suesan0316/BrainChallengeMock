@@ -84,7 +84,6 @@
     <Compile Include="Custom\MyPagerAdapter.cs" />
     <Compile Include="Custom\MyPagerCatalog.cs" />
     <Compile Include="Activity\FlexibilityGameActivity.cs" />
-    <Compile Include="AppConst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
