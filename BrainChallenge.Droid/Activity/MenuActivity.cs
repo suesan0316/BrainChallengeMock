@@ -28,9 +28,17 @@ namespace BrainChallenge.Droid
 			button.Click += delegate
 			{
 				var activity2 = new Intent(this, typeof(GameStartActivity));
+				activity2.PutExtra("MyData", "MemoryGameActivity");
 				StartActivity(activity2);
 			};
 
+			var button2 = FindViewById<Button>(Resource.Id.button2);
+			button2.Click += delegate
+			{
+				var activity2 = new Intent(this, typeof(GameStartActivity));
+				activity2.PutExtra("MyData", "FlexibilityGameActivity");
+				StartActivity(activity2);
+			};
         }
     }
 }

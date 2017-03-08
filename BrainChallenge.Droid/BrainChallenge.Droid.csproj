@@ -73,16 +73,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GameStartActivity.cs" />
-    <Compile Include="GameResultActivity.cs" />
-    <Compile Include="HelpActivity.cs" />
-    <Compile Include="MyPagerCatalog.cs" />
-    <Compile Include="MyPagerAdapter.cs" />
-    <Compile Include="MyPager.cs" />
-    <Compile Include="MemoryGameActivity.cs" />
+    <Compile Include="Activity\GameResultActivity.cs" />
+    <Compile Include="Activity\GameStartActivity.cs" />
+    <Compile Include="Activity\MemoryGameActivity.cs" />
+    <Compile Include="Activity\MenuActivity.cs" />
+    <Compile Include="Activity\HelpActivity.cs" />
+    <Compile Include="Custom\MyPager.cs" />
+    <Compile Include="Custom\MyPagerAdapter.cs" />
+    <Compile Include="Custom\MyPagerCatalog.cs" />
+    <Compile Include="Activity\FlexibilityGameActivity.cs" />
+    <Compile Include="AppConst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -105,6 +107,8 @@
     <AndroidResource Include="Resources\drawable\pine.jpg" />
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\MemoryGame.axml" />
+    <AndroidResource Include="Resources\layout\FlexibilityGame.axml" />
+    <AndroidResource Include="Resources\layout\SpeedGame.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -114,6 +118,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activity\" />
+    <Folder Include="Custom\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
