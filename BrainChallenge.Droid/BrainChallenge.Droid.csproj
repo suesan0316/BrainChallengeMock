@@ -84,6 +84,7 @@
     <Compile Include="Custom\MyPagerAdapter.cs" />
     <Compile Include="Custom\MyPagerCatalog.cs" />
     <Compile Include="Activity\FlexibilityGameActivity.cs" />
+    <Compile Include="AppConst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -108,6 +109,7 @@
     <AndroidResource Include="Resources\layout\MemoryGame.axml" />
     <AndroidResource Include="Resources\layout\FlexibilityGame.axml" />
     <AndroidResource Include="Resources\layout\SpeedGame.axml" />
+    <AndroidResource Include="Resources\layout\ComputationalGame.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

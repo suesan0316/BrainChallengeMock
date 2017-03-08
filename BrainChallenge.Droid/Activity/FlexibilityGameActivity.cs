@@ -13,16 +13,24 @@ using Android.Widget;
 
 namespace BrainChallenge.Droid
 {
-	[Activity(Theme = "@android:style/Theme.Light.NoTitleBar",Label = "FlexibilityGameActivity")]
+	[Activity(Label = "FlexibilityGameActivity")]
 	public class FlexibilityGameActivity : Activity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
+			this.SetTheme(AppConst.targetTheme);
 			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.FlexibilityGame);
 
 			// Create your application here
+			// Create your application here
+			var returnButton = FindViewById<Button>(Resource.Id.button3);
+			returnButton.Click += delegate
+			{
+				var activity2 = new Intent(this, typeof(GameResultActivity));
+				StartActivity(activity2);
+			};
 		}
 	}
 }

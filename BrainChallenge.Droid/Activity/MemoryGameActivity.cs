@@ -13,11 +13,12 @@ using Android.Widget;
 
 namespace BrainChallenge.Droid
 {
-	[Activity(Theme = "@android:style/Theme.Light.NoTitleBar",Label = "MemoryGameActivity")]
+	[Activity(Label = "MemoryGameActivity")]
 	public class MemoryGameActivity : Activity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
+			this.SetTheme(AppConst.targetTheme);
 			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.MemoryGame);

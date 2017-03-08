@@ -10,12 +10,13 @@ using Android.Support.V4.App;
 
 namespace BrainChallenge.Droid
 {
-	[Activity(Theme = "@android:style/Theme.Light.NoTitleBar",Label = "HelpActivity")]
+	[Activity(Label = "HelpActivity")]
 	public class HelpActivity : Activity
 	{
 		MyPagerCatalog treeCatalog;
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
+			this.SetTheme(AppConst.targetTheme);
 			base.OnCreate(savedInstanceState);
 
 			// Set our view from the "main" layout resource

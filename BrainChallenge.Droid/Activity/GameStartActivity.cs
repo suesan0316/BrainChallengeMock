@@ -13,11 +13,12 @@ using Android.Widget;
 
 namespace BrainChallenge.Droid
 {
-	[Activity(Theme = "@android:style/Theme.Light.NoTitleBar", Label = "GameStartActivity")]
+	[Activity(Label = "GameStartActivity")]
 	public class GameStartActivity : Activity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
+			this.SetTheme(AppConst.targetTheme);
 			base.OnCreate(savedInstanceState);
 			SetContentView(Resource.Layout.GameStart);
 			var button = FindViewById<Button>(Resource.Id.button4);

@@ -12,11 +12,12 @@ using Android.Widget;
 
 namespace BrainChallenge.Droid
 {
-    [Activity(Theme = "@android:style/Theme.Light.NoTitleBar", Label = "MenuActivity", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "MenuActivity", MainLauncher = true, Icon = "@drawable/icon")]
     public class MenuActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+			this.SetTheme(AppConst.targetTheme);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Menu);
 
