@@ -40,6 +40,15 @@ namespace BrainChallenge.Droid
 				activity2.PutExtra("MyData", "FlexibilityGameActivity");
 				StartActivity(activity2);
 			};
+
+
+			var button4 = FindViewById<Button>(Resource.Id.button4);
+			button4.Click += delegate
+			{
+				var activity2 = new Intent(this, typeof(GameStartActivity));
+				activity2.PutExtra("MyData", "ComputationalGameActivity");
+				StartActivity(activity2);
+			};
         }
     }
 }

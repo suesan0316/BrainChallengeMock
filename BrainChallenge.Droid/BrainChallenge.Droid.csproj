@@ -85,6 +85,7 @@
     <Compile Include="Custom\MyPagerCatalog.cs" />
     <Compile Include="Activity\FlexibilityGameActivity.cs" />
     <Compile Include="AppConst.cs" />
+    <Compile Include="Activity\ComputationalGameActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

@@ -90,8 +90,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f050029
 			public const int button = 2131034153;
 			
-			// aapt resource value: 0x7f050007
-			public const int button1 = 2131034119;
+			// aapt resource value: 0x7f050006
+			public const int button1 = 2131034118;
 			
 			// aapt resource value: 0x7f05001a
 			public const int button10 = 2131034138;
@@ -123,8 +123,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f050023
 			public const int button19 = 2131034147;
 			
-			// aapt resource value: 0x7f050008
-			public const int button2 = 2131034120;
+			// aapt resource value: 0x7f050007
+			public const int button2 = 2131034119;
 			
 			// aapt resource value: 0x7f050024
 			public const int button20 = 2131034148;
@@ -135,8 +135,8 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f050026
 			public const int button22 = 2131034150;
 			
-			// aapt resource value: 0x7f05000a
-			public const int button3 = 2131034122;
+			// aapt resource value: 0x7f050009
+			public const int button3 = 2131034121;
 			
 			// aapt resource value: 0x7f050011
 			public const int button4 = 2131034129;
@@ -168,14 +168,14 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f050000
 			public const int linearLayout1 = 2131034112;
 			
-			// aapt resource value: 0x7f050004
-			public const int linearLayout2 = 2131034116;
+			// aapt resource value: 0x7f050005
+			public const int linearLayout2 = 2131034117;
 			
-			// aapt resource value: 0x7f050006
-			public const int linearLayout3 = 2131034118;
+			// aapt resource value: 0x7f050002
+			public const int linearLayout3 = 2131034114;
 			
-			// aapt resource value: 0x7f050009
-			public const int linearLayout4 = 2131034121;
+			// aapt resource value: 0x7f050008
+			public const int linearLayout4 = 2131034120;
 			
 			// aapt resource value: 0x7f050013
 			public const int pagerTabStrip2 = 2131034131;
@@ -186,14 +186,14 @@ namespace BrainChallenge.Droid
 			// aapt resource value: 0x7f050001
 			public const int textView1 = 2131034113;
 			
+			// aapt resource value: 0x7f05000a
+			public const int textView2 = 2131034122;
+			
 			// aapt resource value: 0x7f050003
-			public const int textView2 = 2131034115;
+			public const int textView3 = 2131034115;
 			
-			// aapt resource value: 0x7f050005
-			public const int textView3 = 2131034117;
-			
-			// aapt resource value: 0x7f050002
-			public const int textView4 = 2131034114;
+			// aapt resource value: 0x7f050004
+			public const int textView4 = 2131034116;
 			
 			// aapt resource value: 0x7f05000e
 			public const int textView5 = 2131034126;
