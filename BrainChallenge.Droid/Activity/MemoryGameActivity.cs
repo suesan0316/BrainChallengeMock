@@ -18,26 +18,26 @@ namespace BrainChallenge.Droid
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			this.SetTheme(AppConst.targetTheme);
+			SetTheme(AppConst.targetTheme);
 			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.MemoryGame);
 
-			// Create your application here
-			var returnButton = FindViewById<Button>(Resource.Id.button21);
-			returnButton.Click += delegate {
+			var returnButton = FindViewById<Button>(Resource.Id.returnButton);
+			returnButton.Click += delegate
+			{
 				var activity2 = new Intent(this, typeof(GameResultActivity));
 				StartActivity(activity2);
 			};
 
-			var startButton = FindViewById<Button>(Resource.Id.button22);
+			var startButton = FindViewById<Button>(Resource.Id.startButton);
 
 			startButton.Click += delegate
 			{
 				for (int i = 1; i <= 20; i++)
 				{
 					var res = FindViewById<TextView>(Resource.Id.textView2);
-					var index = Resources.GetIdentifier("button"+i, "id", this.PackageName);
+					var index = Resources.GetIdentifier("button" + i, "id", this.PackageName);
 					var button = FindViewById<Button>(index);
 					if (button.Text.Equals("O"))
 					{
@@ -49,7 +49,8 @@ namespace BrainChallenge.Droid
 					}
 					else
 					{
-						button.Click += delegate {
+						button.Click += delegate
+						{
 							button.Text = "X";
 							res.Text = "はずれ...";
 						};
@@ -58,7 +59,6 @@ namespace BrainChallenge.Droid
 					button.Text = "";
 				}
 			};
-
 		}
 	}
 }

@@ -18,40 +18,34 @@ namespace BrainChallenge.Droid
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			this.SetTheme(AppConst.targetTheme);
+			SetTheme(AppConst.targetTheme);
+
 			base.OnCreate(savedInstanceState);
+
 			SetContentView(Resource.Layout.GameStart);
-			var button = FindViewById<Button>(Resource.Id.button4);
 
-			string text = Intent.GetStringExtra("MyData") ?? "Data not available";
-
-
-
-			button.Click += delegate
+			var returnButton = FindViewById<Button>(Resource.Id.returnButton);
+			returnButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(MenuActivity));
-				activity2.PutExtra("MyData", "Data from Activity1");
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(MenuActivity));
+				StartActivity(next);
 			};
 
-			var button1 = FindViewById<Button>(Resource.Id.button1);
-			button1.Click += delegate
+			string nextInfo = Intent.GetStringExtra("MyData") ?? "Data not available";
+
+			var gameStartButton = FindViewById<Button>(Resource.Id.gameStartButton);
+			gameStartButton.Click += delegate
 			{
-				var activity2 = new Intent(this, Type.GetType("BrainChallenge.Droid." + text));
-				activity2.PutExtra("MyData", "Data from Activity1");
-				StartActivity(activity2);
+				var next = new Intent(this, Type.GetType("BrainChallenge.Droid." + nextInfo));
+				StartActivity(next);
 			};
 
-			var button3 = FindViewById<Button>(Resource.Id.button3);
-			button3.Click += delegate
+			var helpButton = FindViewById<Button>(Resource.Id.helpButton);
+			helpButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(HelpActivity));
-				activity2.PutExtra("MyData", "Data from Activity1");
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(HelpActivity));
+				StartActivity(next);
 			};
-
-
-			// Create your application here
 		}
 	}
 }

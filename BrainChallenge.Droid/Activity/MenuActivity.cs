@@ -17,37 +17,33 @@ namespace BrainChallenge.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-			this.SetTheme(AppConst.targetTheme);
+			SetTheme(AppConst.targetTheme);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Menu);
 
-			string text = Intent.GetStringExtra("MyData") ?? "Data not available";
-
-			//
-            // Create your application here
-			var button = FindViewById<Button>(Resource.Id.button);
-			button.Click += delegate
+			var selectMemoryGameButton = FindViewById<Button>(Resource.Id.selectMemoryGameButton);
+			selectMemoryGameButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(GameStartActivity));
-				activity2.PutExtra("MyData", "MemoryGameActivity");
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(GameStartActivity));
+				next.PutExtra("MyData", "MemoryGameActivity");
+				StartActivity(next);
 			};
 
-			var button2 = FindViewById<Button>(Resource.Id.button2);
-			button2.Click += delegate
+			var selectFlexibilityGameButton = FindViewById<Button>(Resource.Id.selectFlexibilityGameButton);
+			selectFlexibilityGameButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(GameStartActivity));
-				activity2.PutExtra("MyData", "FlexibilityGameActivity");
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(GameStartActivity));
+				next.PutExtra("MyData", "FlexibilityGameActivity");
+				StartActivity(next);
 			};
 
 
-			var button4 = FindViewById<Button>(Resource.Id.button4);
-			button4.Click += delegate
+			var selectComputationalGameButton = FindViewById<Button>(Resource.Id.selectComputationalGameButton);
+			selectComputationalGameButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(GameStartActivity));
-				activity2.PutExtra("MyData", "ComputationalGameActivity");
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(GameStartActivity));
+				next.PutExtra("MyData", "ComputationalGameActivity");
+				StartActivity(next);
 			};
         }
     }

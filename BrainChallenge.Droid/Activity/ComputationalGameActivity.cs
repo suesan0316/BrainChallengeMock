@@ -1,14 +1,6 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 
 namespace BrainChallenge.Droid
@@ -18,20 +10,17 @@ namespace BrainChallenge.Droid
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			this.SetTheme(AppConst.targetTheme);
+			SetTheme(AppConst.targetTheme);
 
 			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.ComputationalGame);
 
-			// Create your application here
-
-			// Create your application here
-			var returnButton = FindViewById<Button>(Resource.Id.button3);
+			var returnButton = FindViewById<Button>(Resource.Id.returnButton);
 			returnButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(GameResultActivity));
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(GameResultActivity));
+				StartActivity(next);
 			};
 		}
 	}

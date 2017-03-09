@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
             android:gravity="center"
-            android:layout_marginTop="11.5dp" />
+            android:layout_marginTop="15.0dp" />
     </LinearLayout>
     <TextView
         android:text="ルール変更まであと５問"
@@ -84,8 +84,8 @@
             android:text="戻る"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/button3"
-            android:layout_marginLeft="56.5dp"
-            android:layout_marginTop="20.5dp" />
+            android:id="@+id/returnButton"
+            android:layout_marginLeft="25.0dp"
+            android:layout_marginTop="20.0dp" />
     </LinearLayout>
 </LinearLayout>

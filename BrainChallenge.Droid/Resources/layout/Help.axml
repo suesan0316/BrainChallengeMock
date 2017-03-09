@@ -65,6 +65,8 @@
             android:text="戻る"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/button1" />
+            android:id="@+id/returnButton"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp" />
     </LinearLayout>
 </LinearLayout>

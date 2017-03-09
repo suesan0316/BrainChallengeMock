@@ -1,14 +1,6 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 
 namespace BrainChallenge.Droid
@@ -18,26 +10,27 @@ namespace BrainChallenge.Droid
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			this.SetTheme(AppConst.targetTheme);
+			SetTheme(AppConst.targetTheme);
+
 			base.OnCreate(savedInstanceState);
+
 			SetContentView(Resource.Layout.GameResult);
-			var button = FindViewById<Button>(Resource.Id.button4);
-			button.Click += delegate
+
+			var returnButton = FindViewById<Button>(Resource.Id.returnButton);
+			returnButton.Click += delegate
 			{
-				var activity2 = new Intent(this, typeof(MenuActivity));
-				activity2.PutExtra("MyData", "Data from Activity1");
-				StartActivity(activity2);
+				var next = new Intent(this, typeof(MenuActivity));
+				next.PutExtra("MyData", "Data from Activity1");
+				StartActivity(next);
 			};
 
-			var again = FindViewById<Button>(Resource.Id.button1);
+			var againButton = FindViewById<Button>(Resource.Id.againButton);
 
-			again.Click += delegate {
-				var activity2 = new Intent(this, typeof(MemoryGameActivity));
-				activity2.PutExtra("MyData", "Data from Activity1");
-				StartActivity(activity2);
+			againButton.Click += delegate {
+				var next = new Intent(this, typeof(MemoryGameActivity));
+				next.PutExtra("MyData", "Data from Activity1");
+				StartActivity(next);
 			};
-
-			// Create your application here
 		}
 	}
 }

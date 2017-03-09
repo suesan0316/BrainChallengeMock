@@ -41,13 +41,7 @@ namespace BrainChallenge.Droid
             new MyPagerPage { imageId = Resource.Drawable.images,
                            caption = "No.4" },
             new MyPagerPage { imageId = Resource.Drawable.images,
-                           caption = "No.5" }/*,
-            new MyPagerPage { imageId = Resource.Drawable.fir,
-                           caption = "No.6: Fir" },
-            new MyPagerPage { imageId = Resource.Drawable.pine,
-                           caption = "No.7: Pine" },
-            new MyPagerPage { imageId = Resource.Drawable.elm,
-                           caption = "No.8: Elm" }*/
+                           caption = "No.5" }
         };
 
         // Array of tree pages that make up the catalog:

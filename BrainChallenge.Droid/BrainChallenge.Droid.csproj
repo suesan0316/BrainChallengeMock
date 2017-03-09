@@ -98,14 +98,6 @@
     <AndroidResource Include="Resources\drawable\images.png" />
     <AndroidResource Include="Resources\layout\GameResult.axml" />
     <AndroidResource Include="Resources\layout\Help.axml" />
-    <AndroidResource Include="Resources\drawable\birch.jpg" />
-    <AndroidResource Include="Resources\drawable\coconut.jpg" />
-    <AndroidResource Include="Resources\drawable\elm.jpg" />
-    <AndroidResource Include="Resources\drawable\fir.jpg" />
-    <AndroidResource Include="Resources\drawable\larch.jpg" />
-    <AndroidResource Include="Resources\drawable\maple.jpg" />
-    <AndroidResource Include="Resources\drawable\oak.jpg" />
-    <AndroidResource Include="Resources\drawable\pine.jpg" />
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\MemoryGame.axml" />
     <AndroidResource Include="Resources\layout\FlexibilityGame.axml" />
